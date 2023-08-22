@@ -1,0 +1,21 @@
+{
+  "name": "nft-practice",
+  "version": "1.0.0",
+  "description": "deploying my first nft",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ntf",
+    "natsu"
+  ],
+  "author": "Raahim",
+  "license": "ISC",
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@openzeppelin/contracts": "^4.8.1",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.12.6"
+  }
+}

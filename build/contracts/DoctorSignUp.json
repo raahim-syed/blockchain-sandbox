@@ -1,0 +1,1413 @@
+{
+  "contractName": "DoctorSignUp",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "doctors",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "email",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "email",
+          "type": "string"
+        }
+      ],
+      "name": "signUp",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "metamaskAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getDoctor",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"doctors\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"metamaskAddress\",\"type\":\"address\"}],\"name\":\"getDoctor\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"}],\"name\":\"signUp\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Todo.sol\":\"DoctorSignUp\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Todo.sol\":{\"keccak256\":\"0xcd0b63e8a9229ff1111fc29cbb06cd2dfad3c6be47398a412d241e191d7f2045\",\"urls\":[\"bzz-raw://ef51d89f2210255b5838b2d921c7c98e50dc598684f3f5827dd686f297eaa741\",\"dweb:/ipfs/QmQUvRjN4iAy2t65SrNc422SxLW4Dht9Sj5c8LaSKm3qqb\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610641806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80632f04e06414610046578063a469a3321461014a578063a9583c2214610279575b600080fd5b61006c6004803603602081101561005c57600080fd5b50356001600160a01b031661029f565b604051808060200180602001838103835285818151815260200191508051906020019080838360005b838110156100ad578181015183820152602001610095565b50505050905090810190601f1680156100da5780820380516001836020036101000a031916815260200191505b50838103825284518152845160209182019186019080838360005b8381101561010d5781810151838201526020016100f5565b50505050905090810190601f16801561013a5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b6102776004803603604081101561016057600080fd5b81019060208101813564010000000081111561017b57600080fd5b82018360208201111561018d57600080fd5b803590602001918460018302840111640100000000831117156101af57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929594936020810193503591505064010000000081111561020257600080fd5b82018360208201111561021457600080fd5b8035906020019184600183028401116401000000008311171561023657600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506103df945050505050565b005b61006c6004803603602081101561028f57600080fd5b50356001600160a01b0316610435565b6001600160a01b03811660009081526020818152604091829020805483516002600180841615610100026000190190931604601f81018590048502820185019095528481526060948594928401928491908301828280156103415780601f1061031657610100808354040283529160200191610341565b820191906000526020600020905b81548152906001019060200180831161032457829003601f168201915b5050845460408051602060026001851615610100026000190190941693909304601f8101849004840282018401909252818152959750869450925084019050828280156103cf5780601f106103a4576101008083540402835291602001916103cf565b820191906000526020600020905b8154815290600101906020018083116103b257829003601f168201915b5050505050905091509150915091565b60408051808201825283815260208082018490523360009081528082529290922081518051929391926104159284920190610571565b50602082810151805161042e9260018501920190610571565b5050505050565b6000602081815291815260409081902080548251601f6002600019610100600186161502019093169290920491820185900485028101850190935280835290928391908301828280156104c95780601f1061049e576101008083540402835291602001916104c9565b820191906000526020600020905b8154815290600101906020018083116104ac57829003601f168201915b505050505090806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105675780601f1061053c57610100808354040283529160200191610567565b820191906000526020600020905b81548152906001019060200180831161054a57829003601f168201915b5050505050905082565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106105b257805160ff19168380011785556105df565b828001600101855582156105df579182015b828111156105df5782518255916020019190600101906105c4565b506105eb9291506105ef565b5090565b61060991905b808211156105eb57600081556001016105f5565b9056fea265627a7a723158209e7785483c85f151780d7956d9e287e98547f24f12d95b9f6651528499091db564736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80632f04e06414610046578063a469a3321461014a578063a9583c2214610279575b600080fd5b61006c6004803603602081101561005c57600080fd5b50356001600160a01b031661029f565b604051808060200180602001838103835285818151815260200191508051906020019080838360005b838110156100ad578181015183820152602001610095565b50505050905090810190601f1680156100da5780820380516001836020036101000a031916815260200191505b50838103825284518152845160209182019186019080838360005b8381101561010d5781810151838201526020016100f5565b50505050905090810190601f16801561013a5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b6102776004803603604081101561016057600080fd5b81019060208101813564010000000081111561017b57600080fd5b82018360208201111561018d57600080fd5b803590602001918460018302840111640100000000831117156101af57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929594936020810193503591505064010000000081111561020257600080fd5b82018360208201111561021457600080fd5b8035906020019184600183028401116401000000008311171561023657600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506103df945050505050565b005b61006c6004803603602081101561028f57600080fd5b50356001600160a01b0316610435565b6001600160a01b03811660009081526020818152604091829020805483516002600180841615610100026000190190931604601f81018590048502820185019095528481526060948594928401928491908301828280156103415780601f1061031657610100808354040283529160200191610341565b820191906000526020600020905b81548152906001019060200180831161032457829003601f168201915b5050845460408051602060026001851615610100026000190190941693909304601f8101849004840282018401909252818152959750869450925084019050828280156103cf5780601f106103a4576101008083540402835291602001916103cf565b820191906000526020600020905b8154815290600101906020018083116103b257829003601f168201915b5050505050905091509150915091565b60408051808201825283815260208082018490523360009081528082529290922081518051929391926104159284920190610571565b50602082810151805161042e9260018501920190610571565b5050505050565b6000602081815291815260409081902080548251601f6002600019610100600186161502019093169290920491820185900485028101850190935280835290928391908301828280156104c95780601f1061049e576101008083540402835291602001916104c9565b820191906000526020600020905b8154815290600101906020018083116104ac57829003601f168201915b505050505090806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105675780601f1061053c57610100808354040283529160200191610567565b820191906000526020600020905b81548152906001019060200180831161054a57829003601f168201915b5050505050905082565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106105b257805160ff19168380011785556105df565b828001600101855582156105df579182015b828111156105df5782518255916020019190600101906105c4565b506105eb9291506105ef565b5090565b61060991905b808211156105eb57600081556001016105f5565b9056fea265627a7a723158209e7785483c85f151780d7956d9e287e98547f24f12d95b9f6651528499091db564736f6c63430005100032",
+  "sourceMap": "73:473:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;73:473:4;;;;;;;",
+  "deployedSourceMap": "73:473:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;73:473:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;359:184;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;359:184:4;-1:-1:-1;;;;;359:184:4;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;359:184:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;359:184:4;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;359:184:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;227:124;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;227:124:4;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;227:124:4;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;227:124:4;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;227:124:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;227:124:4;;;;;;;;-1:-1:-1;227:124:4;;-1:-1:-1;;21:11;5:28;;2:2;;;46:1;43;36:12;2:2;227:124:4;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;227:124:4;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;227:124:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;227:124:4;;-1:-1:-1;227:124:4;;-1:-1:-1;;;;;227:124:4:i;:::-;;177:41;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;177:41:4;-1:-1:-1;;;;;177:41:4;;:::i;359:184::-;-1:-1:-1;;;;;473:24:4;;:7;:24;;;;;;;;;;;;465:70;;;;;504:30;465:70;;;;;;-1:-1:-1;;465:70:4;;;;;;;;;;;;;;;;;;;;;;;424:13;;;;504:30;;;;473:24;;465:70;;;473:24;465:70;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;465:70:4;;;;;;;;;;;;;-1:-1:-1;;465:70:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;465:70:4;;-1:-1:-1;465:70:4;-1:-1:-1;465:70:4;;;-1:-1:-1;465:70:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;359:184;;;:::o;227:124::-;324:19;;;;;;;;;;;;;;;;;;310:10;-1:-1:-1;302:19:4;;;;;;;;;;:41;;;;324:19;;302;;:41;;:19;;:41;;;:::i;:::-;-1:-1:-1;302:41:4;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;227:124:4:o;177:41::-;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;177:41:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;73:473::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;73:473:4;;;-1:-1:-1;73:473:4;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.4.16 <0.9.0;\r\n\r\ncontract DoctorSignUp {\r\n    struct Doctor {\r\n        string name;\r\n        string email;\r\n    }\r\n\r\n    mapping(address => Doctor) public doctors;\r\n\r\n    function signUp(string memory name, string memory email) public {\r\n        doctors[msg.sender] = Doctor(name, email);\r\n    }\r\n\r\n    function getDoctor(address metamaskAddress) public view returns (string memory, string memory) {\r\n        return (doctors[metamaskAddress].name, doctors[metamaskAddress].email);\r\n    }\r\n}\r\n\r\n// contract Todo{\r\n//     //Task Struct\r\n//     struct Task{\r\n//         uint taskId;\r\n//         string taskName;   \r\n//         bool completed;     \r\n//     }\r\n\r\n//     //Holds all Tasks\r\n//     mapping(uint => Task)public list;\r\n\r\n//     //Count of tasks in list\r\n//     uint public taskCount;\r\n\r\n//     ///Events\r\n//     event taskAdded(uint taskCount, string taskName, bool completed);\r\n//     event tasksDone(string taskName, uint count);\r\n\r\n//     //Constructor\r\n//     constructor() public {\r\n//         taskCount = 0;\r\n//     }\r\n\r\n//     //Modifiers\r\n//     modifier taskLimit(uint id){\r\n//         require(id > taskCount, \"This task does not exist\");\r\n//         _;\r\n//     }\r\n\r\n//     //Adds task to list\r\n//     function addTask(string memory _taskName)public{\r\n//         //Pushing A task to the list\r\n//         list[taskCount] = Task({\r\n//             taskId: taskCount,\r\n//             taskName: _taskName,\r\n//             completed: false \r\n//         });\r\n//         //Sending event\r\n//         emit taskAdded(taskCount, _taskName, false);\r\n//     }\r\n\r\n//     //Function That Marks Tasks\r\n//     function markTask(uint id) public{\r\n//         require(id > taskCount, \"This task does not exist\");\r\n\r\n//         //Setting task as completed\r\n//         list[id].completed = true;\r\n\r\n//         //Sending Completed task to frontend\r\n//         emit tasksDone(list[id].taskName, id);\r\n//     }\r\n// }",
+  "sourcePath": "C:\\Users\\DNS Tech\\Desktop\\blockchain-sandbox\\contracts\\Todo.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Todo.sol",
+    "exportedSymbols": {
+      "DoctorSignUp": [
+        220
+      ]
+    },
+    "id": 221,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 172,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".16",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "37:32:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 220,
+        "linearizedBaseContracts": [
+          220
+        ],
+        "name": "DoctorSignUp",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "DoctorSignUp.Doctor",
+            "id": 177,
+            "members": [
+              {
+                "constant": false,
+                "id": 174,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 177,
+                "src": "127:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 173,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "127:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 176,
+                "name": "email",
+                "nodeType": "VariableDeclaration",
+                "scope": 177,
+                "src": "149:12:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 175,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "149:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Doctor",
+            "nodeType": "StructDefinition",
+            "scope": 220,
+            "src": "102:67:4",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 181,
+            "name": "doctors",
+            "nodeType": "VariableDeclaration",
+            "scope": 220,
+            "src": "177:41:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Doctor_$177_storage_$",
+              "typeString": "mapping(address => struct DoctorSignUp.Doctor)"
+            },
+            "typeName": {
+              "id": 180,
+              "keyType": {
+                "id": 178,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "185:7:4",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "177:26:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Doctor_$177_storage_$",
+                "typeString": "mapping(address => struct DoctorSignUp.Doctor)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 179,
+                "name": "Doctor",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 177,
+                "src": "196:6:4",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Doctor_$177_storage_ptr",
+                  "typeString": "struct DoctorSignUp.Doctor"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 198,
+              "nodeType": "Block",
+              "src": "291:60:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 196,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 188,
+                        "name": "doctors",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 181,
+                        "src": "302:7:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Doctor_$177_storage_$",
+                          "typeString": "mapping(address => struct DoctorSignUp.Doctor storage ref)"
+                        }
+                      },
+                      "id": 191,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 189,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 235,
+                          "src": "310:3:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 190,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "310:10:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "302:19:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Doctor_$177_storage",
+                        "typeString": "struct DoctorSignUp.Doctor storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 193,
+                          "name": "name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 183,
+                          "src": "331:4:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 194,
+                          "name": "email",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 185,
+                          "src": "337:5:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 192,
+                        "name": "Doctor",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 177,
+                        "src": "324:6:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Doctor_$177_storage_ptr_$",
+                          "typeString": "type(struct DoctorSignUp.Doctor storage pointer)"
+                        }
+                      },
+                      "id": 195,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "324:19:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Doctor_$177_memory",
+                        "typeString": "struct DoctorSignUp.Doctor memory"
+                      }
+                    },
+                    "src": "302:41:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Doctor_$177_storage",
+                      "typeString": "struct DoctorSignUp.Doctor storage ref"
+                    }
+                  },
+                  "id": 197,
+                  "nodeType": "ExpressionStatement",
+                  "src": "302:41:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 199,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "signUp",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 186,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 183,
+                  "name": "name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 199,
+                  "src": "243:18:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 182,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "243:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 185,
+                  "name": "email",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 199,
+                  "src": "263:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 184,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "263:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "242:41:4"
+            },
+            "returnParameters": {
+              "id": 187,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "291:0:4"
+            },
+            "scope": 220,
+            "src": "227:124:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 218,
+              "nodeType": "Block",
+              "src": "454:89:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 208,
+                            "name": "doctors",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 181,
+                            "src": "473:7:4",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Doctor_$177_storage_$",
+                              "typeString": "mapping(address => struct DoctorSignUp.Doctor storage ref)"
+                            }
+                          },
+                          "id": 210,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 209,
+                            "name": "metamaskAddress",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 201,
+                            "src": "481:15:4",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "473:24:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Doctor_$177_storage",
+                            "typeString": "struct DoctorSignUp.Doctor storage ref"
+                          }
+                        },
+                        "id": 211,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "name",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 174,
+                        "src": "473:29:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_storage",
+                          "typeString": "string storage ref"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "baseExpression": {
+                            "argumentTypes": null,
+                            "id": 212,
+                            "name": "doctors",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 181,
+                            "src": "504:7:4",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Doctor_$177_storage_$",
+                              "typeString": "mapping(address => struct DoctorSignUp.Doctor storage ref)"
+                            }
+                          },
+                          "id": 214,
+                          "indexExpression": {
+                            "argumentTypes": null,
+                            "id": 213,
+                            "name": "metamaskAddress",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 201,
+                            "src": "512:15:4",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "IndexAccess",
+                          "src": "504:24:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Doctor_$177_storage",
+                            "typeString": "struct DoctorSignUp.Doctor storage ref"
+                          }
+                        },
+                        "id": 215,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "email",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 176,
+                        "src": "504:30:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_storage",
+                          "typeString": "string storage ref"
+                        }
+                      }
+                    ],
+                    "id": 216,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "472:63:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_string_storage_$_t_string_storage_$",
+                      "typeString": "tuple(string storage ref,string storage ref)"
+                    }
+                  },
+                  "functionReturnParameters": 207,
+                  "id": 217,
+                  "nodeType": "Return",
+                  "src": "465:70:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 219,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getDoctor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 202,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 201,
+                  "name": "metamaskAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 219,
+                  "src": "378:23:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 200,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "378:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "377:25:4"
+            },
+            "returnParameters": {
+              "id": 207,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 204,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 219,
+                  "src": "424:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 203,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "424:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 206,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 219,
+                  "src": "439:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 205,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "439:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "423:30:4"
+            },
+            "scope": 220,
+            "src": "359:184:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 221,
+        "src": "73:473:4"
+      }
+    ],
+    "src": "37:1925:4"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Todo.sol",
+      "exportedSymbols": {
+        "DoctorSignUp": [
+          220
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".16",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 172,
+        "name": "PragmaDirective",
+        "src": "37:32:4"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            220
+          ],
+          "name": "DoctorSignUp",
+          "scope": 221
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "DoctorSignUp.Doctor",
+              "name": "Doctor",
+              "scope": 220,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "name",
+                  "scope": 177,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 173,
+                    "name": "ElementaryTypeName",
+                    "src": "127:6:4"
+                  }
+                ],
+                "id": 174,
+                "name": "VariableDeclaration",
+                "src": "127:11:4"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "email",
+                  "scope": 177,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 175,
+                    "name": "ElementaryTypeName",
+                    "src": "149:6:4"
+                  }
+                ],
+                "id": 176,
+                "name": "VariableDeclaration",
+                "src": "149:12:4"
+              }
+            ],
+            "id": 177,
+            "name": "StructDefinition",
+            "src": "102:67:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "doctors",
+              "scope": 220,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => struct DoctorSignUp.Doctor)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => struct DoctorSignUp.Doctor)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 178,
+                    "name": "ElementaryTypeName",
+                    "src": "185:7:4"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Doctor",
+                      "referencedDeclaration": 177,
+                      "type": "struct DoctorSignUp.Doctor"
+                    },
+                    "id": 179,
+                    "name": "UserDefinedTypeName",
+                    "src": "196:6:4"
+                  }
+                ],
+                "id": 180,
+                "name": "Mapping",
+                "src": "177:26:4"
+              }
+            ],
+            "id": 181,
+            "name": "VariableDeclaration",
+            "src": "177:41:4"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "signUp",
+              "scope": 220,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "name",
+                      "scope": 199,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 182,
+                        "name": "ElementaryTypeName",
+                        "src": "243:6:4"
+                      }
+                    ],
+                    "id": 183,
+                    "name": "VariableDeclaration",
+                    "src": "243:18:4"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "email",
+                      "scope": 199,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 184,
+                        "name": "ElementaryTypeName",
+                        "src": "263:6:4"
+                      }
+                    ],
+                    "id": 185,
+                    "name": "VariableDeclaration",
+                    "src": "263:19:4"
+                  }
+                ],
+                "id": 186,
+                "name": "ParameterList",
+                "src": "242:41:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 187,
+                "name": "ParameterList",
+                "src": "291:0:4"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct DoctorSignUp.Doctor storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct DoctorSignUp.Doctor storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 181,
+                                  "type": "mapping(address => struct DoctorSignUp.Doctor storage ref)",
+                                  "value": "doctors"
+                                },
+                                "id": 188,
+                                "name": "Identifier",
+                                "src": "302:7:4"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address payable"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 235,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 189,
+                                    "name": "Identifier",
+                                    "src": "310:3:4"
+                                  }
+                                ],
+                                "id": 190,
+                                "name": "MemberAccess",
+                                "src": "310:10:4"
+                              }
+                            ],
+                            "id": 191,
+                            "name": "IndexAccess",
+                            "src": "302:19:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct DoctorSignUp.Doctor memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 177,
+                                  "type": "type(struct DoctorSignUp.Doctor storage pointer)",
+                                  "value": "Doctor"
+                                },
+                                "id": 192,
+                                "name": "Identifier",
+                                "src": "324:6:4"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 183,
+                                  "type": "string memory",
+                                  "value": "name"
+                                },
+                                "id": 193,
+                                "name": "Identifier",
+                                "src": "331:4:4"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 185,
+                                  "type": "string memory",
+                                  "value": "email"
+                                },
+                                "id": 194,
+                                "name": "Identifier",
+                                "src": "337:5:4"
+                              }
+                            ],
+                            "id": 195,
+                            "name": "FunctionCall",
+                            "src": "324:19:4"
+                          }
+                        ],
+                        "id": 196,
+                        "name": "Assignment",
+                        "src": "302:41:4"
+                      }
+                    ],
+                    "id": 197,
+                    "name": "ExpressionStatement",
+                    "src": "302:41:4"
+                  }
+                ],
+                "id": 198,
+                "name": "Block",
+                "src": "291:60:4"
+              }
+            ],
+            "id": 199,
+            "name": "FunctionDefinition",
+            "src": "227:124:4"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getDoctor",
+              "scope": 220,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "metamaskAddress",
+                      "scope": 219,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 200,
+                        "name": "ElementaryTypeName",
+                        "src": "378:7:4"
+                      }
+                    ],
+                    "id": 201,
+                    "name": "VariableDeclaration",
+                    "src": "378:23:4"
+                  }
+                ],
+                "id": 202,
+                "name": "ParameterList",
+                "src": "377:25:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 219,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 203,
+                        "name": "ElementaryTypeName",
+                        "src": "424:6:4"
+                      }
+                    ],
+                    "id": 204,
+                    "name": "VariableDeclaration",
+                    "src": "424:13:4"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 219,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 205,
+                        "name": "ElementaryTypeName",
+                        "src": "439:6:4"
+                      }
+                    ],
+                    "id": 206,
+                    "name": "VariableDeclaration",
+                    "src": "439:13:4"
+                  }
+                ],
+                "id": 207,
+                "name": "ParameterList",
+                "src": "423:30:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 207
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "tuple(string storage ref,string storage ref)"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "name",
+                              "referencedDeclaration": 174,
+                              "type": "string storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct DoctorSignUp.Doctor storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 181,
+                                      "type": "mapping(address => struct DoctorSignUp.Doctor storage ref)",
+                                      "value": "doctors"
+                                    },
+                                    "id": 208,
+                                    "name": "Identifier",
+                                    "src": "473:7:4"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 201,
+                                      "type": "address",
+                                      "value": "metamaskAddress"
+                                    },
+                                    "id": 209,
+                                    "name": "Identifier",
+                                    "src": "481:15:4"
+                                  }
+                                ],
+                                "id": 210,
+                                "name": "IndexAccess",
+                                "src": "473:24:4"
+                              }
+                            ],
+                            "id": 211,
+                            "name": "MemberAccess",
+                            "src": "473:29:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "email",
+                              "referencedDeclaration": 176,
+                              "type": "string storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct DoctorSignUp.Doctor storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 181,
+                                      "type": "mapping(address => struct DoctorSignUp.Doctor storage ref)",
+                                      "value": "doctors"
+                                    },
+                                    "id": 212,
+                                    "name": "Identifier",
+                                    "src": "504:7:4"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 201,
+                                      "type": "address",
+                                      "value": "metamaskAddress"
+                                    },
+                                    "id": 213,
+                                    "name": "Identifier",
+                                    "src": "512:15:4"
+                                  }
+                                ],
+                                "id": 214,
+                                "name": "IndexAccess",
+                                "src": "504:24:4"
+                              }
+                            ],
+                            "id": 215,
+                            "name": "MemberAccess",
+                            "src": "504:30:4"
+                          }
+                        ],
+                        "id": 216,
+                        "name": "TupleExpression",
+                        "src": "472:63:4"
+                      }
+                    ],
+                    "id": 217,
+                    "name": "Return",
+                    "src": "465:70:4"
+                  }
+                ],
+                "id": 218,
+                "name": "Block",
+                "src": "454:89:4"
+              }
+            ],
+            "id": 219,
+            "name": "FunctionDefinition",
+            "src": "359:184:4"
+          }
+        ],
+        "id": 220,
+        "name": "ContractDefinition",
+        "src": "73:473:4"
+      }
+    ],
+    "id": 221,
+    "name": "SourceUnit",
+    "src": "37:1925:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2023-05-18T17:28:56.432Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
