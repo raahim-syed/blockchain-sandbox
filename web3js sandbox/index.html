@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Sandbox</title>
+
+    <link rel="stylesheet" href="pico.min.css">
+</head>
+<body>
+    <h1 class="top-heading">This where I practice Web3</h1>
+
+    <section class="container form-holder">
+        <form action="index">
+            <div class="form-control">
+                <label for="accountAddress">Account Address</label>
+                <input type="text" name="accountAddress" id="accountAddress">
+            </div>
+    
+            <hr>
+            <h4>Get Contract Information</h4>
+    
+            <div class="form-control" id="main-form">
+                <label for="contractAddress">Contract Address</label>
+                <input type="text" name="contractAddress" id="contractAddress">
+            </div>
+            <div class="form-control">
+                <label for="abi">Enter ABI Code</label>
+                <textarea name="abi" id="abi" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Get Account" class="btn btn-account">
+            <input type="submit" value="Get Contract" class="btn btn-contract">
+        </form>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+</html>

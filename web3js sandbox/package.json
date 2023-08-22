@@ -1,0 +1,24 @@
+{
+  "name": "web3js-sandbox",
+  "version": "1.0.0",
+  "description": "sandbox for trying out web3 library",
+  "main": "main.js",
+  "scripts": {
+    "blockchain": "nodemon script.js"
+  },
+  "keywords": [
+    "web3",
+    "practice",
+    "sandbox"
+  ],
+  "author": "Raahim",
+  "license": "ISC",
+  "dependencies": {
+    "@ethereumjs/tx": "^4.0.2",
+    "dotenv": "^16.0.3",
+    "web3": "^1.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
